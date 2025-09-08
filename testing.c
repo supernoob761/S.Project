@@ -2,14 +2,14 @@
 #include <string.h>
 
 int main() {
-    char word[] = "apple";   // Secret word
+    char word[] = "apple";   
     int length = strlen(word);
     char guess;
-    int lives = 6;           // Number of tries
-    int correct = 0;         // Correct guesses
-    char display[20];        // To show progress
+    int lives = 6;           
+    int correct = 0;         
+    char display[20];        
     
-    // Initialize display with underscores
+    
     for (int i = 0; i < length; i++) {
         display[i] = '_';
     }
