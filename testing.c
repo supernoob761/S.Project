@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char word[] = "apple";   
+    char word[] = "restart";   
     int length = strlen(word);
     char guess;
     int lives = 6;           
