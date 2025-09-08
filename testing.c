@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
-    char word[] = "restart";   
+    char *words[] = {"restart", "remove", "abandon", "inferno", "motivation", "suceed"};
+    int totalWords = sizeof(words) / sizeof(words[0]);
+
+    srand(time(NULL));
+    char *word = words[rand() % totalWords];
+
     int length = strlen(word);
     char guess;
     int lives = 6;           
@@ -15,7 +22,7 @@ int main() {
     }
     display[length] = '\0';
 
-    printf("Welcome to Hangman!\n");
+    printf("START!\n");
 
     while (lives > 0 && correct < length) {
         printf("\nWord: %s\n", display);
