@@ -4,7 +4,7 @@
 #include <time.h>
 
 int main() {
-    char *words[] = {"restart", "remove", "abandon", "inferno", "motivation", "suceed"};
+    char *words[] = {"restart", "remove", "abandon", "inferno", "motivation", "suceed", "pause"};
     int totalWords = sizeof(words) / sizeof(words[0]);
 
     srand(time(NULL));
